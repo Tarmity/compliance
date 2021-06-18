@@ -8,9 +8,9 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-   width: 275,
-   height: 150,
-   margin: '0 140px',
+   width: '250px',
+   height: '100px',
+   margin: '0 40px',
   },
   bullet: {
     display: 'inline-block',
