@@ -11,6 +11,9 @@ const useStyles = makeStyles({
    width: '250px',
    height: '100px',
    margin: '0 40px',
+   display: 'flex',
+   justifyContent: 'space-between',
+   alignItems: 'flex-start'
   },
   bullet: {
     display: 'inline-block',
@@ -23,33 +26,29 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12,
   },
+  box1: {
+      backgroundColor: 'red',
+      height: 60,
+      width: 60,
+      marginLeft: '1rem',
+      
+      }
 });
 
-export default function SmallCard() {
+export default function OverDueCard(props) {
+
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
+//   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root}>
+        <Card className={classes.box1}></Card>
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography>
-        <Typography variant="h5" component="h2">
-          be{bull}nev{bull}o{bull}lent
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
+          <Typography>{props.reason}</Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
-}
+};
+
+
+  

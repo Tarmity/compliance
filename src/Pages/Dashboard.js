@@ -3,7 +3,10 @@ import styled from "styled-components";
 import MainCard from '../Components/MainCards/MainCard';
 import { Container } from '@material-ui/core';
 import { CenterFocusStrong } from '@material-ui/icons';
-import SmallCard from '../Components/SmallCards/SmallCard';
+import OverDueCard from '../Components/SmallCards/OverDueCard';
+import ThirtyCard from '../Components/SmallCards/ThirtyCard';
+import SixtyCard from '../Components/SmallCards/SixtyCard'
+
 
 
 
@@ -26,19 +29,22 @@ const containerStyle = {
 }
 
 const mainCardStyle = {
-    
-    
+   backgroundColor: 'red'
 }
 
-const Dashboard = () => {
+const smallCard ={
+    backgroundColor: 'red',
+}
+
+export default function Dashboard (props) {
     return (
         <>
             <div classNaame='dashboard'>
                 <h1 style={{ textAlign: 'center' }}>Dashboard</h1>
                 <Container fixed style={smallContainStyle}>
-                    <SmallCard />
-                    <SmallCard />
-                    <SmallCard />
+                    <OverDueCard />
+                    <ThirtyCard />
+                    <SixtyCard />
                 </Container>
                 <Container fixed style={containerStyle}>
                     <MainCard style={mainCardStyle} />
@@ -50,4 +56,3 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
