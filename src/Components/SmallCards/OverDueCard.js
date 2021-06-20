@@ -44,7 +44,7 @@ export default function OverDueCard(props) {
     <Card className={classes.root}>
         <Card className={classes.box1}></Card>
       <CardContent>
-          <Typography>{props.reason}</Typography>
+          <Typography>Over Due</Typography>
       </CardContent>
     </Card>
   );

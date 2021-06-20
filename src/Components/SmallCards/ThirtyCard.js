@@ -44,7 +44,7 @@ export default function ThirtyCard(props) {
       <Card className={classes.root}>
           <Card className={classes.box1}></Card>
         <CardContent>
-            <Typography>{props.reason}</Typography>
+            <Typography>Next 30 Days</Typography>
         </CardContent>
       </Card>
     );

@@ -46,7 +46,7 @@ export default function SixtyCard(props) {
       <Card className={classes.root}>
           <Card className={classes.box1}></Card>
         <CardContent>
-            <Typography>{props.reason}</Typography>
+            <Typography>Next 60 Days</Typography>
         </CardContent>
       </Card>
     );
