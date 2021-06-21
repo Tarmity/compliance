@@ -5,19 +5,20 @@ import { Container } from '@material-ui/core';
 import { CenterFocusStrong } from '@material-ui/icons';
 import OverDueCard from '../Components/SmallCards/OverDueCard';
 import ThirtyCard from '../Components/SmallCards/ThirtyCard';
-import SixtyCard from '../Components/SmallCards/SixtyCard'
+import SixtyCard from '../Components/SmallCards/SixtyCard';
+import ComplianceCard from '../Components/MainCards/ComplianceCard';
 
 
 
 
 const smallContainStyle = {
     height: "20vh",
-    background: 'lightblue',
     marginTop: '3rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-around'
 }
+
 
 const containerStyle = {
     marginTop: '4rem',
@@ -28,15 +29,12 @@ const containerStyle = {
     justifyContent: 'space-between'
 }
 
-const mainCardStyle = {
-   backgroundColor: 'red'
-}
 
-const smallCard ={
-    backgroundColor: 'red',
-}
 
 export default function Dashboard (props) {
+    document.body.style = 'background: #f9f9f9';
+
+
     return (
         <>
             <div classNaame='dashboard'>
@@ -47,9 +45,9 @@ export default function Dashboard (props) {
                     <SixtyCard />
                 </Container>
                 <Container fixed style={containerStyle}>
-                    <MainCard style={mainCardStyle} />
-                    <MainCard style={mainCardStyle} />
-                    <MainCard style={mainCardStyle} />
+                    <ComplianceCard  />
+                    <MainCard />
+                    <MainCard />
                 </Container>
             </div>
         </>
