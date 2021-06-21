@@ -13,8 +13,6 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
-
 `
 
 const Box = styled.div`
@@ -32,7 +30,7 @@ const Box = styled.div`
 `
 const Heading = styled.div`
   margin-right: 20px;
-  font-size: 1.3rem;
+  font-size: 1rem;
 `
 
 const OverDueIcon = styled.div`
@@ -44,7 +42,9 @@ const OverDueIcon = styled.div`
 `
 
 const Number = styled.div`
-    
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
 `
 
 const OverDueCard = () => {
@@ -57,8 +57,10 @@ const OverDueCard = () => {
             <AiIcons.AiOutlineInfoCircle />
           </OverDueIcon>
         </Box>
-        <Heading>Over Due</Heading>
-      <Number>0</Number>
+        <Heading>Over Due
+        <Number>0</Number>
+        </Heading>
+      
       </Container>
     </>
   )
@@ -66,48 +68,5 @@ const OverDueCard = () => {
 
 export default OverDueCard;
 
-// const useStyles = makeStyles({
-//   root: {
-//    width: '250px',
-//    height: '100px',
-//    margin: '0 40px',
-//    display: 'flex',
-//    justifyContent: 'space-between',
-//    alignItems: 'flex-start'
-//   },
-//   bullet: {
-//     display: 'inline-block',
-//     margin: '0 2px',
-//     transform: 'scale(0.8)',
-//   },
-//   title: {
-//     fontSize: 8,
-//   },
-//   pos: {
-//     marginBottom: 12,
-//   },
-//   box1: {
-//       backgroundColor: 'red',
-//       height: 60,
-//       width: 60,
-//       marginLeft: '1rem',
-
-//       }
-// });
-
-// export default function OverDueCard(props) {
-
-//   const classes = useStyles();
-// //   const bull = <span className={classes.bullet}>•</span>;
-
-//   return (
-//     <Card className={classes.root}>
-//         <Card className={classes.box1}></Card>
-//       <CardContent>
-//           <Typography>Over Due</Typography>
-//       </CardContent>
-//     </Card>
-//   );
-// };
 
 
