@@ -7,6 +7,7 @@ import OverDueCard from '../Components/SmallCards/OverDueCard';
 import ThirtyCard from '../Components/SmallCards/ThirtyCard';
 import SixtyCard from '../Components/SmallCards/SixtyCard';
 import ComplianceCard from '../Components/MainCards/ComplianceCard';
+import ContractsAgreeCard from '../Components/MainCards/ContractsAgreeCard';
 
 
 
@@ -46,7 +47,7 @@ export default function Dashboard (props) {
                 </Container>
                 <Container fixed style={containerStyle}>
                     <ComplianceCard  />
-                    <MainCard />
+                    <ContractsAgreeCard />
                     <MainCard />
                 </Container>
             </div>

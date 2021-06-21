@@ -16,17 +16,13 @@ const Container = styled.div`
 `
 
 const Box = styled.div`
-    background: red;
+    background: #072ac8;
     height: 150px;
     width: 330px;
     border-radius: .3rem;
     position: relative;
     top: -2.5rem;
     box-shadow: 1px 1px .3rem grey;
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
 `
 
 const Header = styled.div`
@@ -58,13 +54,14 @@ const Button = styled(Link)`
     
 `
 
-const ComplianceCard = () => {
+const ContractsAgreeCard = () => {
     return (
         <>
             <Container>
                 <Box>
-                    <Header>Compliance</Header>
-                    <Header>Register</Header>
+                    <Header>Contracts</Header>
+                    <Header>Agreements</Header>
+                    <Header>Supplies</Header>
                 </Box>
                 <Button>Learn More</Button>
 
@@ -75,4 +72,4 @@ const ComplianceCard = () => {
     )
 }
 
-export default ComplianceCard;
+export default ContractsAgreeCard;

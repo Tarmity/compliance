@@ -18,7 +18,7 @@ import * as CgIcons from "react-icons/cg";
   const Box = styled.div`
     height: 60px;
     width: 60px;
-    background-color: green;
+    background-color: #3bb54a;
     border-radius: 5px;
     margin-left: 15px;
     position: relative;
