@@ -13,6 +13,11 @@ const Container = styled.div`
     flex-direction: column;
     border-radius: .3rem;
     box-shadow: 1px 1px .3rem black;
+    @media (max-width: 769px) {
+        height:200px;
+        width: 330px;
+    }
+   
 `
 
 const Box = styled.div`
@@ -27,6 +32,11 @@ const Box = styled.div`
     justify-content: center;
     flex-direction: column;
     align-content: center;
+    @media (max-width: 769px) {
+        height:110px;
+        width: 310px;
+    }
+   
 `
 
 const Header = styled.div`
@@ -35,6 +45,9 @@ const Header = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    @media (max-width: 769px) {
+        font-size: 1.5rem;  
+    }
 
 `
 
@@ -55,10 +68,14 @@ const Button = styled(Link)`
         color:white;
         opacity: 0.6;
     }
+    @media (max-width: 769px) {
+        height:40px;
+        width: 110px;
+    }
     
 `
 
-const ComplianceCard = () => {
+const DocumentsCard = () => {
     return (
         <>
             <Container>
@@ -74,4 +91,4 @@ const ComplianceCard = () => {
     )
 }
 
-export default ComplianceCard;
+export default DocumentsCard;

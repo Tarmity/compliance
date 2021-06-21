@@ -13,7 +13,11 @@ const Container = styled.div`
     flex-direction: column;
     border-radius: .3rem;
     box-shadow: 1px 1px .3rem black;
-`
+    @media (max-width: 769px) {
+        height:200px;
+        width: 330px;
+    }
+    `
 
 const Box = styled.div`
     background: #072ac8;
@@ -23,6 +27,11 @@ const Box = styled.div`
     position: relative;
     top: -2.5rem;
     box-shadow: 1px 1px .3rem grey;
+    @media (max-width: 769px) {
+        height:110px;
+        width: 310px;
+    }
+    
 `
 
 const Header = styled.div`
@@ -31,6 +40,9 @@ const Header = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    @media (max-width: 769px) {
+        font-size: 1.5rem;  
+    }
 
 `
 
@@ -50,6 +62,10 @@ const Button = styled(Link)`
         background-color: blue;
         color:white;
         opacity: 0.6;
+    }
+    @media (max-width: 769px) {
+        height:40px;
+        width: 110px;
     }
     
 `

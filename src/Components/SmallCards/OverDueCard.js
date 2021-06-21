@@ -13,6 +13,13 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @media (max-width: 769px) {
+        height: 80px;
+        width: 200px; 
+    }
+    @media (max-width: 737px) {
+        
+    }
 `
 
 const Box = styled.div`
@@ -27,10 +34,20 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 5px grey;
+  @media (max-width: 769px) {
+        height: 50px;
+        width: 50px;
+        margin-left: 7px;
+       
+    }
 `
 const Heading = styled.div`
   margin-right: 20px;
   font-size: 1rem;
+  @media (max-width: 769px) {
+        font-size: 1.1rem;
+       
+    }
 `
 
 const OverDueIcon = styled.div`
@@ -39,6 +56,10 @@ const OverDueIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 769px) {
+      font-size: 2rem;
+       
+    }
 `
 
 const Number = styled.div`
