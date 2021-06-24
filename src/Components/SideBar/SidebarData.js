@@ -15,13 +15,13 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [
             {
-                title: 'Users',
-                path: "/dashboard/users",
+                title: 'Compliance',
+                path: "/dashboard/compliance",
                 icon: <IoIcons.IoIosPaper />,
             },
             {
-                title: 'Revenue',
-                path: "dashboard/revenue",
+                title: 'C.A.S',
+                path: "dashboard/cas",
                 icon: <IoIcons.IoIosPaper />,
             },
         ]
