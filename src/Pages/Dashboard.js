@@ -15,36 +15,36 @@ const SmallBoxContainer = styled.div`
     margin-left: 7rem;
     margin-right: 7rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    @media (max-width: 1025px) {
-        margin: 2rem 5rem; 
-    }
-    @media (max-width: 769px) {
-        margin: 2rem 1rem;
-        height:15vh;
-        justify-content: space-between;
-    }
-    @media (max-width: 737px) {
-        height: 40vh;
-        flex-direction: column;
-        margin-bottom: 3.5rem;
-    }
-    @media (max-width: 640px) {
-        height: 45vh;
-        flex-direction: column;
-        margin-bottom: 3.5rem;
-    }
-    @media (max-width: 376px) {
-        height: 42vh;
-        flex-direction: column;
-        margin-bottom: 3.5rem;
-    }
-    @media (max-width: 321px) {
-        height: 50vh;
-        flex-direction: column;
-        margin-bottom: 3.5rem;
-    }
+
+   @media (min-width: 992px) and (max-width: 1200px){
+    flex-direction: row;
+    width: 90vw;
+    height: 20vh;
+    margin: 3rem 3rem;
+   }
+
+   @media (min-width: 768px) and (max-width: 992px) {
+    flex-direction: row;
+    width: 90vw;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+   }
+
+   @media (min-width: 576px) and (max-width: 767px){
+    flex-direction: column;
+    height: 40vh; 
+   }
+
+   @media (min-width: 0px) and (max-width: 575px){
+    flex-direction: column;
+    height: 60vh; 
+   }
+
    
 `
 
@@ -55,45 +55,32 @@ const LargeBoxContainer = styled.div`
      margin-right: 5rem;
      height: 40vh;
      display: flex;
+     flex-direction: row;
      align-items: center;
      justify-content: space-between;
-     @media (max-width: 1025px) {
-        flex-direction: column;
-        height: 65vh;
-        margin-top: 1rem;
-    }
-    @media (max-width: 769px) {
+   
+    @media (min-width: 992px) and (max-width: 1200px){
         margin: 2rem 1rem;
+        flex-direction: column;
         height: 65vh;
         justify-content: space-between;
     }
-    @media (max-width: 541px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         margin: 2rem 1rem;
         height: 95vh;
         justify-content: space-between;
     }
-    @media (max-width: 414px) {
+    @media (min-width: 576px) and (max-width: 767px) {
         height: 100vh;
         flex-direction: column;
         margin-bottom: 3.5rem;
     }
-    @media (max-width: 376px) {
+    @media (min-width: 0px) and (max-width: 575px){
         height: 90vh;
         flex-direction: column;
         margin-bottom: 3.5rem;
     }
-    @media (max-width: 361px) {
-        height: 110vh;
-        flex-direction: column;
-        margin-bottom: 3.5rem;
-    }
-    @media (max-width: 321px) {
-        height: 120vh;
-        flex-direction: column;
-        margin-bottom: 3.5rem;
-    }
     
-  
 `
 
 const Dashboard = () => {

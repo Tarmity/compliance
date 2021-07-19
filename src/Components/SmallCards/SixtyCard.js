@@ -13,13 +13,11 @@ import * as CgIcons from "react-icons/cg";
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    @media (max-width: 769px) {
+    @media (min-width: 768px) {
         height: 80px;
         width: 200px;
     }
-    @media (max-width: 737px) {
-        
-    }
+   
   `
   
   const Box = styled.div`
@@ -34,7 +32,7 @@ import * as CgIcons from "react-icons/cg";
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 5px grey;
-    @media (max-width: 769px) {
+    @media (min-width: 768px) {
         height: 50px;
         width: 50px;
         margin-left: 7px;
@@ -43,7 +41,7 @@ import * as CgIcons from "react-icons/cg";
   const Heading = styled.div`
     margin-right: 20px;
     font-size: 1rem;
-    @media (max-width: 769px) {
+    @media (min-width: 768px) {
         font-size: 1.1rem;
        
     }
@@ -55,7 +53,7 @@ import * as CgIcons from "react-icons/cg";
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 769px) {
+    @media (min-width: 768px) {
       font-size: 2rem;
        
     }
