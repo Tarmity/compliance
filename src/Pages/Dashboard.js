@@ -9,7 +9,7 @@ import ContractsAgreeCard from '../Components/MainCards/ContractsAgreeCard';
 
 
 const SmallBoxContainer = styled.div`
-    background-color: lightblue;
+    /* background-color: lightblue; */
     height: 20vh;
     margin-top: 3rem;
     margin-left: 7rem;
@@ -49,7 +49,7 @@ const SmallBoxContainer = styled.div`
 `
 
 const LargeBoxContainer = styled.div`
-    background-color: lightblue;
+    /* background-color: lightblue; */
      margin-top: 4rem;
      margin-left: 5rem;
      margin-right: 5rem;
@@ -59,26 +59,25 @@ const LargeBoxContainer = styled.div`
      align-items: center;
      justify-content: space-between;
    
-    @media (min-width: 992px) and (max-width: 1200px){
+    @media (min-width: 992px) and (max-width: 1230px){
         margin: 2rem 1rem;
         flex-direction: column;
-        height: 65vh;
+        height: 90vh;
         justify-content: space-between;
     }
     @media (min-width: 768px) and (max-width: 992px) {
         margin: 2rem 1rem;
+        flex-direction: column;
         height: 95vh;
         justify-content: space-between;
     }
     @media (min-width: 576px) and (max-width: 767px) {
-        height: 100vh;
+        height: 80vh;
         flex-direction: column;
-        margin-bottom: 3.5rem;
     }
     @media (min-width: 0px) and (max-width: 575px){
-        height: 90vh;
+        height: 80vh;
         flex-direction: column;
-        margin-bottom: 3.5rem;
     }
     
 `
