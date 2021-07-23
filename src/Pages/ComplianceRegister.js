@@ -36,8 +36,9 @@ const ComplianceRegister = () => {
             <h1 style={{ textAlign: "center" }}>Compliance Register</h1>
             <Container>
                 <Button  onClick={openPopup}>+ NEW</Button>
-                <AddDoc showPopup={showPopup} setShowPopup={setShowPopup} />
+                
             </Container>
+            <AddDoc showPopup={showPopup} setShowPopup={setShowPopup} />
         </>
     )
 }
