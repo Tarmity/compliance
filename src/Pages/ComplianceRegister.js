@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import { AddDoc } from '../Components/AddDocumentPopUp/AddDoc';
+import { PopUp } from '../Components/PopUp/PopUp';
 
 const Container = styled.div`
     background: lightblue;
@@ -36,9 +36,8 @@ const ComplianceRegister = () => {
             <h1 style={{ textAlign: "center" }}>Compliance Register</h1>
             <Container>
                 <Button  onClick={openPopup}>+ NEW</Button>
-                
             </Container>
-            <AddDoc showPopup={showPopup} setShowPopup={setShowPopup} />
+            <PopUp showPopup={showPopup} setShowPopup={setShowPopup} />
         </>
     )
 }
