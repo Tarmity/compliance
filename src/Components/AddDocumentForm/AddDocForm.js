@@ -52,11 +52,33 @@ const Spacer = styled.div`
     justify-content: center;
 `
 
+const Button = styled.button`
+    height: 50px;
+    width: 100px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+    background: blue;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+`
+const Section = styled.section`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+`
+const Section2 = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+`
 
 
 
-
-const AddDocForm = () => {
+const AddDocForm = ({ showPopup, setShowPopup }) => {
 
     const [values, setValues] = useState(intialformValues);
     const classes = useStyle();
@@ -73,41 +95,72 @@ const AddDocForm = () => {
     };
 
     return (
+        <>
+            <Section>
+                <TextField
+                    variant="filled"
+                    label="Record"
+                    multiline maxRows={4}
+                    className={classes.record} />
 
-        <Grid container>
+
+                <TextField
+                    variant="filled"
+                    label="Review Of"
+                    multiline maxRows={4}
+                    className={classes.review} />
+
+            </Section>
 
 
-            <Grid item xs={6}>
-                <TextField variant="filled" label="Record" multiline maxRows={4} className={classes.record} />
-            </Grid>
-            <Grid item xs={6}>
-                <TextField variant="filled" label="Review Of" multiline maxRows={4} className={classes.review} />
-            </Grid>
 
-            <Grid item xs={12}>
-                <Spacer />
-            </Grid>
 
-            <Grid item xs={6}>
-                <FormLabel component="legend" className={classes.radio}>Physical Records kept for 7 years</FormLabel>
-                <RadioGroup row name="physical" value={physical} onChange={handleChange} className={classes.radio}>
-                    <FormControlLabel value="yes" control={<Radio />} label="Yes" />
-                    <FormControlLabel value="no" control={<Radio />} label="No" />
+
+            <Section>
+                <FormLabel
+                    component="legend"
+                    className={classes.radio}>Physical Records kept for 7 years
+                </FormLabel>
+
+                <FormLabel
+                    component="legend"
+                    className={classes.radio}>Electronic Records kept for 7 years
+                </FormLabel>
+            </Section>
+
+            <Section>
+                <RadioGroup
+                    row name="physical"
+                    value={physical}
+                    onChange={handleChange}
+                    className={classes.radio}>
+                    <FormControlLabel
+                        value="yes"
+                        control={<Radio />}
+                        label="Yes" />
+                    <FormControlLabel
+                        value="no"
+                        control={<Radio />}
+                        label="No" />
                 </RadioGroup>
-            </Grid>
-            <Grid item xs={6}>
-                <FormLabel component="legend" className={classes.radio}>Electronic Records kept for 7 years</FormLabel>
-                <RadioGroup row name="physical" value={electronic} onChange={swapChange} className={classes.radio}>
-                    <FormControlLabel value="yes" control={<Radio />} label="Yes" />
-                    <FormControlLabel value="no" control={<Radio />} label="No" />
+
+                <RadioGroup
+                    row name="physical"
+                    value={electronic}
+                    onChange={swapChange}
+                    className={classes.radio}>
+                    <FormControlLabel
+                        value="yes"
+                        control={<Radio />}
+                        label="Yes" />
+                    <FormControlLabel
+                        value="no"
+                        control={<Radio />}
+                        label="No" />
                 </RadioGroup>
-            </Grid>
+            </Section>
 
-            <Grid item xs={12}>
-                <Spacer />
-            </Grid>
-
-            <Grid item xs={4}>
+            <Section>
                 <FormControl variant="filled" className={classes.formControl}>
                     <InputLabel >Responsible Department</InputLabel>
                     <Select
@@ -125,8 +178,7 @@ const AddDocForm = () => {
                         <option value={30}>HR</option>
                     </Select>
                 </FormControl>
-            </Grid>
-            <Grid item xs={4}>
+
                 <FormControl variant="filled" className={classes.formControl}>
                     <InputLabel >Fequency</InputLabel>
                     <Select
@@ -145,8 +197,7 @@ const AddDocForm = () => {
                         <option value={40}>Quarterly</option>
                     </Select>
                 </FormControl>
-            </Grid>
-            <Grid item xs={4}>
+
                 <TextField variant="filled"
                     id="date"
                     label="Due Date"
@@ -157,29 +208,26 @@ const AddDocForm = () => {
                         shrink: true,
                     }}
                 />
-            </Grid>
-
-            <Grid item xs={12}>
-                <Spacer />
-            </Grid>
-            <Grid item xs={12}>
-                <Spacer />
-            </Grid>
+            </Section>
 
 
-            <Grid item xs={2}>
-                <Spacer />
-            </Grid>
-            <Grid item xs={8}>
+
+
+            <Section2>
                 <TextField
                     variant="filled"
                     label="Compliance Officer Signature and Date"
                     className={classes.signature}
                 >
                 </TextField>
-            </Grid>
 
-        </Grid>
+            </Section2>
+
+
+            <Section2>
+                <Button onClick={() => setShowPopup(prev => !prev)}>Add</Button>
+            </Section2>
+        </>
     )
 }
 

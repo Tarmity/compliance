@@ -24,18 +24,6 @@ const PopupWrapper = styled.div`
     border-radius: 10px;
 `
 
-const Button = styled.button`
-  height: 50px;
-  width: 100px;
-  padding: 12px 20px;
-   border-radius: 4px;
-   border: none;
-   background: blue;
-   color: #fff;
-   font-size: 16px;
-   cursor: pointer;
-   
-`
 const FormDiv = styled.div`
     margin: 1rem;
 `
@@ -51,9 +39,8 @@ export const PopUp = ({ showPopup, setShowPopup }) => {
                 <Background>
                     <PopupWrapper showPopup={showPopup}>
                         <FormDiv >
-                            <AddDocForm />
+                            <AddDocForm showPopup={showPopup} setShowPopup={setShowPopup} />
                         </FormDiv>
-                        <Button onClick={() => setShowPopup(prev => !prev)}>Submit</Button>
                     </PopupWrapper>
                 </Background>
 
