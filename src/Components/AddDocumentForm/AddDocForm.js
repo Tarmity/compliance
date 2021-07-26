@@ -112,10 +112,6 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
 
             </Section>
 
-
-
-
-
             <Section>
                 <FormLabel
                     component="legend"
@@ -210,9 +206,6 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
                 />
             </Section>
 
-
-
-
             <Section2>
                 <TextField
                     variant="filled"
@@ -222,7 +215,6 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
                 </TextField>
 
             </Section2>
-
 
             <Section2>
                 <Button onClick={() => setShowPopup(prev => !prev)}>Add</Button>
