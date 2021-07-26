@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
 import { PopUp } from '../Components/PopUp/PopUp';
-import AddDocForm from '../Components/AddDocumentForm/AddDocForm';
+import  Table  from '../Components/Table/Table';
 
 
 const Container = styled.div`
@@ -39,9 +39,9 @@ const ComplianceRegister = () => {
             <Container>
                 <Button  onClick={openPopup}>+ NEW</Button>
             </Container>
-            <PopUp showPopup={showPopup} setShowPopup={setShowPopup}>
-                <AddDocForm />
-            </PopUp>
+            <Table />
+            <PopUp showPopup={showPopup} setShowPopup={setShowPopup} />
+           
         </>
     )
 }

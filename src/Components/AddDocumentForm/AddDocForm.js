@@ -67,13 +67,13 @@ const Section = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem;
+  margin: 1.2rem;
 `
 const Section2 = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin: 1.2rem;
 `
 
 
@@ -95,7 +95,7 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
     };
 
     return (
-        <>
+        <form>
             <Section>
                 <TextField
                     variant="filled"
@@ -111,6 +111,7 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
                     className={classes.review} />
 
             </Section>
+
 
             <Section>
                 <FormLabel
@@ -205,7 +206,6 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
                     }}
                 />
             </Section>
-
             <Section2>
                 <TextField
                     variant="filled"
@@ -216,10 +216,11 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
 
             </Section2>
 
+
             <Section2>
                 <Button onClick={() => setShowPopup(prev => !prev)}>Add</Button>
             </Section2>
-        </>
+        </form>
     )
 }
 

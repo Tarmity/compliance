@@ -28,7 +28,7 @@ const NavIcon = styled(Link)`
     align-items: center;
 `;
 
-const RightNavIcon = styled(Link)`
+const RightNavIcon = styled.div`
     color: #fff;
     margin-right: 2rem;
     font-size: 1.5rem;
@@ -38,7 +38,7 @@ const RightNavIcon = styled(Link)`
     align-items: center;
 `
 
-const NotIcon = styled(Link)`
+const NotIcon = styled.div`
     color: #fff;
     margin-right: 1rem;
     align-items: center;
