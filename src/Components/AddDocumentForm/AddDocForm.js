@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { FormLabel, Grid, Radio, TextField, FormControlLabel, RadioGroup, InputLabel, Select, FormControl } from '@material-ui/core';
+import React, { useState } from 'react'
+import { FormLabel, Radio, TextField, FormControlLabel, RadioGroup, InputLabel, Select, FormControl } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import styled from 'styled-components'
 
@@ -34,23 +34,23 @@ const useStyle = makeStyles((theme) => ({
 
 }))
 
-const intialformValues = {
-    id: 0,
-    record: '',
-    reviewOf: '',
-    physicalRecords: 'yes',
-    electronicRecords: 'no',
-    resonsibleDepart: '',
-    frequency: 'Annually',
-    nextDueDate: new Date(),
+// const intialformValues = {
+//     id: 0,
+//     record: '',
+//     reviewOf: '',
+//     physicalRecords: 'yes',
+//     electronicRecords: 'no',
+//     resonsibleDepart: '',
+//     frequency: 'Annually',
+//     nextDueDate: new Date(),
 
-}
+// }
 
-const Spacer = styled.div`
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-`
+// const Spacer = styled.div`
+//     height: 2rem;
+//     display: flex;
+//     justify-content: center;
+// `
 
 const Button = styled.button`
     height: 50px;
@@ -67,20 +67,20 @@ const Section = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 1.2rem;
+  margin: 1.8rem;
 `
 const Section2 = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.2rem;
+  margin: 1.8rem;
 `
 
 
 
 const AddDocForm = ({ showPopup, setShowPopup }) => {
 
-    const [values, setValues] = useState(intialformValues);
+    // const [values, setValues] = useState(intialformValues);
     const classes = useStyle();
 
     const [physical, setPhysical] = useState('yes')
@@ -170,9 +170,9 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
                     // }}
                     >
                         <option aria-label="None" value="" />
-                        <option value={10}>Compliance</option>
-                        <option value={20}>Credit</option>
-                        <option value={30}>HR</option>
+                        <option >Compliance</option>
+                        <option >Credit</option>
+                        <option >HR</option>
                     </Select>
                 </FormControl>
 
@@ -188,10 +188,10 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
                     // }}
                     >
                         <option aria-label="None" value="" />
-                        <option value={10}>Annually</option>
-                        <option value={20}>Bi Annually</option>
-                        <option value={30}>6 Monthly</option>
-                        <option value={40}>Quarterly</option>
+                        <option >Annually</option>
+                        <option >Bi Annually</option>
+                        <option >6 Monthly</option>
+                        <option >Quarterly</option>
                     </Select>
                 </FormControl>
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as BsIcons from 'react-icons/bs';
-import * as AiIcons from 'react-icons/ai';
-import * as CgIcons from "react-icons/cg";
 
 const Container = styled.div`
   height: 100px;

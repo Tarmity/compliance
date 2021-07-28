@@ -6,7 +6,7 @@ import AddDocForm from '../AddDocumentForm/AddDocForm';
 const Background = styled.div`
     width: 100%;
     height: 60vh;
-    background: white;
+    /* background: white; */
     position: fixed;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@ const PopupWrapper = styled.div`
     width: 800px;
     height: 500px;
     box-shadow: 1px 5px 16px #333;
-    background: #fffafa;
+    /* background: #fffafa; */
     color: #000;
     z-index: 10;
     border-radius: 10px;
