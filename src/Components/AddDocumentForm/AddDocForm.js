@@ -218,7 +218,7 @@ const AddDocForm = ({ showPopup, setShowPopup }) => {
 
 
             <Section2>
-                <Button onClick={() => setShowPopup(prev => !prev)}>Add</Button>
+                <Button type="submit" onClick={() => setShowPopup(prev => !prev)}>Add</Button>
             </Section2>
         </form>
     )
