@@ -18,7 +18,7 @@ const PopupWrapper = styled.div`
     width: 800px;
     height: 500px;
     box-shadow: 1px 5px 16px #333;
-    /* background: #fffafa; */
+    background: #fffafa;
     color: #000;
     z-index: 10;
     border-radius: 10px;
@@ -29,7 +29,7 @@ const FormDiv = styled.div`
 `
 
 
-export const PopUp = ({ showPopup, setShowPopup }) => {
+ const PopUp = ({ showPopup, setShowPopup }) => {
 
 
 
@@ -51,3 +51,5 @@ export const PopUp = ({ showPopup, setShowPopup }) => {
         </>
     )
 }
+
+export default PopUp;

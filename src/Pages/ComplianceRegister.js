@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import { PopUp } from '../Components/PopUp/PopUp';
+import  PopUp from '../Components/PopUp/PopUp';
 import  Table  from '../Components/Table/Table';
 
 
 const Container = styled.div`
-    background: lightblue;
+
     margin: 1rem 1rem;
     display: flex;
     justify-content: center;
@@ -39,8 +39,9 @@ const ComplianceRegister = () => {
             <Container>
                 <Button  onClick={openPopup}>+ NEW</Button>
             </Container>
-            <Table />
             <PopUp showPopup={showPopup} setShowPopup={setShowPopup} />
+            <Table />
+           
            
         </>
     )
