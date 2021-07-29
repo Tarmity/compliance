@@ -15,8 +15,7 @@ const Table = () => {
 
     return (
         <div>
-            <h2 style={{ textAlign: "center" }}>Compliance Documents Table</h2>
-            <table style={{ borderSpacing: '0', border: '1px solid black', marginLeft: 'auto', marginRight: 'auto', width: '80%', marginTop:'2rem'}}>
+            <table style={{ borderSpacing: '0', border: '1px solid black', marginLeft: 'auto', marginRight: 'auto', width: '80%', marginTop:'2rem', marginBottom: '1rem'}}>
                 <thead >
                     <tr >
                         <th style={{ border: 'solid 0.5px #333', background: 'lightblue', color: '#333', fontWeight: 'bold'}}>Record</th>
@@ -24,7 +23,7 @@ const Table = () => {
                         <th style={{ border: 'solid 0.5px #333', background: 'lightblue', color: '#333', fontWeight: 'bold'}}>Physical Records Kept fopr 7 year</th>
                         <th style={{ border: 'solid 0.5px #333', background: 'lightblue', color: '#333', fontWeight: 'bold'}}>Electronic Records Kept fopr 7 year</th>
                         <th style={{ border: 'solid 0.5px #333', background: 'lightblue', color: '#333', fontWeight: 'bold'}}>Responsible Department</th>
-                        <th style={{ border: 'solid 0.5px #333', background: 'lightblue', color: '#333', fontWeight: 'bold'}}>Frequency</th>
+                        <th style={{ border: 'solid 0.5px #333', background: 'lightblue', color: '#333', fontWeight: 'bold'}}>Frequency </th>
                         <th style={{ border: 'solid 0.5px #333', background: 'lightblue', color: '#333', fontWeight: 'bold'}}>Next Due Date</th>
                         <th style={{ border: 'solid 0.5px #333', background: 'lightblue', color: '#333', fontWeight: 'bold'}}>Compliance Officer Signature and Date</th>
                     </tr>
