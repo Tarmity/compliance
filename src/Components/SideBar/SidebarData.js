@@ -21,7 +21,7 @@ export const SidebarData = [
             },
             {
                 title: 'C.A.S',
-                path: "dashboard/cas",
+                path: "/dashboard/cas",
                 icon: <IoIcons.IoIosPaper />,
             },
         ]
