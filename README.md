@@ -1,6 +1,6 @@
 # Compliance 
 
-This project was Create with React.
+This project was Create with React and still under development.
 
 ## Available Scripts
 
